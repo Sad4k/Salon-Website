@@ -1,4 +1,7 @@
+import { loadImages } from './image_loader.js';
+
 // Magazine Cover Carousel
+loadImages().then(() => console.log("Images loaded")).catch(err => console.log(err));
 document.addEventListener('DOMContentLoaded', () => {
     const pages = document.querySelectorAll('.magazine-cover .page');
     let currentPageIndex = 0;
