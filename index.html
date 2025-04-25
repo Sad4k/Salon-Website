@@ -1,26 +1,21 @@
-<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Salón de Belleza</title>
-    <script type="importmap">
-      {
-        "imports": {
-        }
-      }
-    </script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <img src="https://via.placeholder.com/150" alt="Placeholder Image 1" data-image-id="placeholder1">
     <img src="https://via.placeholder.com/200" alt="Placeholder Image 2" data-image-id="placeholder2">
     <header>
-      <h1>Salón de Belleza</h1>
+      <h1 class="rouge-script-regular">Salón de Belleza</h1>
       <nav>
         <ul class="nav-menu">
           <li><a href="#inicio">Inicio</a></li>
@@ -33,18 +28,22 @@
     </header>
 
     <section id="inicio">
-      <h2 class="section-title">Bienvenido al Salón de Belleza</h2>
+     <img class="section-bg section-bg-inicio" src="https://www.genesiscareer.edu/wp-content/uploads/2021/02/Untitled-design-3.png">
+      <h2 class="section-title">Bienvenid@s</h2>
       <div class="magazine-cover">
+        
         <div class="page">
           <img  data-image-id="image1"/>
           <p class="caption">Transformación de Cabello</p>
         </div>
+        
         <div class="page">
           <img  data-image-id="image2"/>
           <p class="caption">Belleza de Manos</p>
         </div>
-         <div class="page">
-          <img data-image-id="image3" />
+        
+        <div class="page">
+          <img src="https://images.unsplash.com/photo-1621600585259-782195468b10?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Proceso de cuidado facial"/>
           <p class="caption">Rutina Facial</p>
         </div>
         <!-- Agrega más páginas según sea necesario -->
@@ -53,11 +52,12 @@
         Descubre la belleza y el estilo que te hacen único.
       </p>
       <button id="reserve-button" onclick="window.location.href='https://example.com/reservas'">
-        Reservar Cita / Comprar Productos
+        Reservar Ahora! 
       </button>
     </section>
 
     <section id="catalogo">
+     <img class="section-bg section-bg-catalogo"  src="https://img.freepik.com/free-photo/styled-hair-extensions-beauty-salon_23-2148940856.jpg?semt=ais_hybrid&w=740">
       <h2 class="section-title">Catálogo</h2>
       <div class="catalog-grid">
         <div class="catalog-item">
@@ -134,6 +134,6 @@
       </div>
     </section>
 
-    <script type="module" src="script.js"></script>
+    <script  type="module" src="script.js"></script>
   </body>
 </html>
