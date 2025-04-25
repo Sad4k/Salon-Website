@@ -1,4 +1,4 @@
-async function loadImages() {
+export async function loadImages() {
   try {
     const response = await fetch('images.json');
     if (!response.ok) {      
